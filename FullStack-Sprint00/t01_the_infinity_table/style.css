@@ -1,0 +1,42 @@
+table{
+    border-collapse: collapse;
+}
+th{
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+thead{
+    border: 2px solid gray;
+}
+td{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid gray;
+}
+td a{
+    color: blue;
+}
+td img{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+}
+.soul{
+    background: orange;
+}
+.time{
+    background: green;
+}
+.space{
+    background: blue;
+}
+.mind{
+    background: yellow;
+}
+.reality{
+    background: red;
+}
+.power{
+    background: purple;
+}

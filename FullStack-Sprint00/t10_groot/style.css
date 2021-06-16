@@ -1,0 +1,29 @@
+.box{
+    margin: 40px auto;
+    position: relative;
+    padding: 25px;
+    background: lightgrey;
+    width: calc(100% - 200px);
+}
+.box:before{
+    content: '';
+    border: 1px solid #000;
+    top: -25px;
+    bottom: -25px;
+    right: 0;
+    left: 0;
+    position: absolute;
+    border-top: #fff;
+    border-bottom: #fff;
+}
+.box:after{
+    content: '';
+    border: 1px solid #000;
+    top: 0;
+    bottom: 0;
+    right: -25px;
+    left: -25px;
+    position: absolute;
+    border-left: #fff;
+    border-right: #fff;
+}

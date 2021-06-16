@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+#rainbow-block{
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    height: 100px;
+    width: 100%;
+}
+
+#horn-block {
+    display: block;
+    width: 0;
+    height: 0;
+    border: 45px solid transparent;
+    border-bottom: 85px solid gray;
+    position: relative;
+    /* that is 40px over the rainbow block */
+    bottom: 85px;
+    /* 100px from the left edge of the page */
+    left: 100px;
+}
