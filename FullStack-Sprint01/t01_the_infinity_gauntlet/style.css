@@ -1,0 +1,9 @@
+.gauntlet{
+    width: 150px;
+}
+.man{
+    width: 80px;
+}
+.gauntlet:hover~.man:nth-child(2n){
+    opacity: 0;
+}

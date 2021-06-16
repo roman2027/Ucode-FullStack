@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="t03. Handbook">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handbook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+</head>
+<body>
+    <header>
+        <nav class="nav_container">
+            <a class="logo" href="#">
+                <span>H</span>
+                <span>A</span>
+                <span>N</span>
+                <span>D</span>
+                <span>B</span>
+                <span>O</span>
+                <span>O</span>
+                <span>K</span>
+            </a>
+            <div class="div_menu">
+                <ul id="menu">
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#web">Web Protocols</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="main_container">
+        <h1><a id="html">HTML</a></h1>
+        <div class="grid_container">
+            <section class="grid-item">
+                <h2>Tag &lt;!DOCTYPE&gt;</h2>
+                <p>The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.<br>In HTML 5, the declaration is simple:</p>
+                <span class="example_center">&lt;!DOCTYPE&gt;</span>
+            </section>
+            <section class="grid-item">
+                <h2>Tag &lt;a&gt;</h2>
+                <p>
+                    The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.<br>
+                    The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.
+                </p>
+                <span class="example_center">&lt;a href= "https://lms.ucode.world/"> ucode :: LMS&lt;/a&gt;</span>
+            </section>
+            <section class="grid-item">
+                <h2>Tag &lt;abbr&gt;</h2>
+                <p>The &lt;abbr&gt; tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".</p>
+                <span class="example_center">&lt;abbr title="World Health Organization">WHO&lt;/abbr&gt;</span>
+            </section>
+            <section class="grid-item">
+                <h2>Tag &lt;link&gt;</h2>
+                <p>The &lt;link&gt; tag defines the relationship between the current document and an external resource.</p>
+                <span class="example_left">&lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="style.css"&gt;<br>&lt;/head&gt;</span>
+            </section>
+        </div>
+    </div>
+    <div class="main_container">
+        <h1><a id="css">CSS</a></h1>
+        <div class="grid_container">
+            <section class="grid-item">
+                <h2>Background</h2>
+                <p>The background shorthand CSS property sets all background style properties at once, such as color, image, origin and size, or repeat method.</p>
+                <span class="example_center">background: green;</span>
+            </section>
+            <section class="grid-item">
+                <h2>Border</h2>
+                <p>The border shorthand CSS property sets an element's border. It sets the values of border-width, border-style, and border-color.</p>
+                <span class="example_center">border: 1px solid #000;</span>
+            </section>
+            <section class="grid-item">
+                <h2>Margin</h2>
+                <p>The margin CSS property sets the margin area on all four sides of an element. It is a shorthand for margin-top, margin-right, margin-bottom, and margin-left.</p>
+                <span class="example_center">margin: 10px 5px 5px 10px;</span>
+            </section>
+            <section class="grid-item">
+                <h2>Font-family</h2>
+                <p>The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.</p>
+                <span class="example_center">font-family: Georgia, serif;</span>
+            </section>
+        </div>
+    </div>
+    <div class="main_container">
+        <h1><a id="web">Web Protocols</a></h1>
+        <div class="grid_container">
+            <section class="grid-item">
+                <h2>Internet Protocol</h2>
+                <p>Internet Protocol (IP) – a set of rules that dictate how data should be delivered over the public network (Internet). Often works in conjunction with the transmission control protocol (TCP), which divides traffic into packets for efficient transport through the Internet; together they are referred to as TCP/IP.</p>
+                <span class="example_left">For example, when an email (using the simple mail transfer protocol – SMTP) is sent from an email server, the TCP layer in that server will divide the message up into multiple packets, number them and then forward them to the IP layer for transport. At the IP layer, each packet will be transported to the destination email server. While each packet is going to the same place, the route they take to get there may be different. When it arrives, the IP layer hands it back to the TCP layer, which reassembles the packets into the message and hands it to the email application, where it shows up in the Inbox.</span>
+            </section>
+            <section class="grid-item">
+                <h2>HTTP/HTTPS</h2>
+                <p>HTTP defines a set of request methods to indicate the desired action to be performed for a given resource. Although they can also be nouns, these request methods are sometimes referred to as HTTP verbs. Each of them implements a different semantic, but some common features are shared by a group of them: e.g. a request method can be safe, idempotent, or cacheable.</p>
+                <span class="example_left">
+                    <dl>
+                        <dt>GET</dt>
+                        <dd>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.</dd>
+                        <dt>HEAD</dt>
+                        <dd>The HEAD method asks for a response identical to that of a GET request, but without the response body.</dd>
+                        <dt>POST</dt>
+                        <dd>The POST method is used to submit an entity to the specified resource, often causing a change in state or side effects on the server.</dd>
+                        <dt>PUT</dt>
+                        <dd>The PUT method replaces all current representations of the target resource with the request payload.</dd>
+                        <dt>DELETE</dt>
+                        <dd>The DELETE method deletes the specified resource.</dd>
+                        <dt>CONNECT</dt>
+                        <dd>The CONNECT method establishes a tunnel to the server identified by the target resource.</dd>
+                        <dt>OPTIONS</dt>
+                        <dd>The OPTIONS method is used to describe the communication options for the target resource.</dd>
+                        <dt>TRACE</dt>
+                        <dd>The TRACE method performs a message loop-back test along the path to the target resource.</dd>
+                        <dt>PATCH</dt>
+                        <dd>The PATCH method is used to apply partial modifications to a resource.</dd>
+                    </dl>
+                </span>
+                <span class="align_c">There are five classes defined by the standard:</span>
+                <span class="example_left">
+                    <ul class="list_classes">
+                        <li>1xx informational response – the request was received, continuing process</li>
+                        <li>2xx successful – the request was successfully received, understood, and accepted</li>
+                        <li>3xx redirection – further action needs to be taken in order to complete the request</li>
+                        <li>4xx client error – the request contains bad syntax or cannot be fulfilled</li>
+                        <li>5xx server error – the server failed to fulfil an apparently valid request</li>
+                    </ul>
+                </span>
+            </section>
+            <section class="grid-item">
+                <h2>DNS Record types</h2>
+                <span class="align_c">Commonly used record types</span>
+                <span class="example_left">
+                    <ul class="list_classes">
+                        <li>A (Host address)</li>
+                        <li>AAAA (IPv6 host address)</li>
+                        <li>ALIAS (Auto resolved alias)</li>
+                        <li>CNAME (Canonical name for an alias)</li>
+                        <li>MX (Mail eXchange)</li>
+                        <li>NS (Name Server)</li>
+                        <li>PTR (Pointer)</li>
+                        <li>SOA (Start Of Authority)</li>
+                        <li>SRV (location of service)</li>
+                        <li>TXT (Descriptive text)</li>
+                    </ul>
+                </span>
+                <span class="align_c">Records types used for DNSSEC</span>
+                <span class="example_left">
+                    <ul class="list_classes">
+                        <li>DNSKEY (DNSSEC public key)</li>
+                        <li>DS (Delegation Signer)</li>
+                        <li>NSEC (Next Secure)</li>
+                        <li>NSEC3 (Next Secure v. 3)</li>
+                        <li>NSEC3PARAM (NSEC3 Parameters)</li>
+                        <li>RRSIG (RRset Signature)</li>
+                    </ul>
+                </span>
+                <span class="align_c">Less commonly used record types:</span>
+                <span class="example_left">
+                    <ul class="list_classes">
+                        <li>AFSDB (AFS Data Base location)</li>
+                        <li>ATMA (Asynchronous Transfer Mode address)</li>
+                        <li>CAA (Certification Authority Authorization)</li>
+                        <li>CERT (Certificate / CRL)</li>
+                        <li>DHCID (DHCP Information)</li>
+                        <li>DNAME (Non-Terminal DNS Name Redirection)</li>
+                        <li>HINFO (Host information)</li>
+                        <li>ISDN (ISDN address)</li>
+                        <li>LOC (Location information)</li>
+                        <li>MB, MG, MINFO, MR (mailbox records)</li>
+                        <li>NAPTR (Naming Authority Pointer)</li>
+                        <li>NSAP (NSAP address)</li>
+                        <li>RP (Responsible person)</li>
+                        <li>RT (Route through)</li>
+                        <li>TLSA (Transport Layer Security Authentication)</li>
+                        <li>X25 (X.25 PSDN address)</li>
+                    </ul>
+                </span>
+            </section>
+            <section class="grid-item">
+                <h2>IP - how to determine<br>   an IP address</h2>
+                <p>Another way to check the IP address for a website is to use the nslookup command from a command prompt. Most operating systems, whether they are Microsoft Windows, Apple OS X, Linux, etc., provide that tool, which is specifically for looking up IP addresses. E.g., suppose I wanted to look up the IP address of google, I could use the command nslookup www.google.com as shown below where the command is run on a Microsoft Windows system:</p>
+                <span class="example_left">C:>nslookup www.google.com <br>
+                    Server: UnKnown <br>
+                    Address: 192.168.0.15 <br>
+                    Non-authoritative answer: <br>
+                    Name: www.google.com <br>
+                    Addresses: 2607:f8b0:4002:c09::68 <br>
+                    173.194.37.84 <br>
+                    173.194.37.80 <br>
+                    173.194.37.83 <br>
+                    173.194.37.81 <br>
+                    173.194.37.82</span>
+                <p>The line immediately below the "Server" line is the IP address of the DNS server that provided the information for google.com. The Addresses line shows an IPv6 address for google.com. IPv6 is a newer version of the Internet Protocol; many websites are now accessible using IPv6, though IPv4 is still widely used. There is no version 5 in use on the Internet; that number was skipped. Most people are more familiar with the IPv4 style addresses, which are the ones shown for google.com below the Addresses line. <br><br>
+                    You will see that there are four IPv4 addresses shown. Many large companies will have more than one IP address associated with a fully qualified domain name (FQDN), such as google.com. When a system out on the Internet looks up google.com, the IP address that is returned by the DNS servers Google uses won't necessarily be the same each time. <br><br>
+                    Many large companies with publicly accessible websites use a round-robin DNS technique for associating IP addresses with their web servers, so that if thousands, or even millions, of people may be accessing their servers simultaneously, they won't all be accessing the same server, since the DNS servers will cycle through a list of IP addresses that are returned for DNS queries for an IP address for a web server, thus distributing the load on the company's servers.</p>    
+            </section>
+        </div>
+    </div>
+</body>
+</html>

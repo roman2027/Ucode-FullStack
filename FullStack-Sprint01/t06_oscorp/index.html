@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="t06. Oscorp">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hookah shop "Dark Zone"</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="index.html">Catalog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="logo-block">
+                <div>
+                    <img src="./assets/images/logo.PNG" alt="">
+                </div>
+            </div>
+            <div class="search-block">
+                <form action="#" method="get">
+                    <input type="search" placeholder="Search...">
+                </form>
+            </div>
+            <div class="contacts-block">
+                <div class="tel"><a href="tel: +380500302381">Phone:<br>+38(050)03-02-381</a></div>
+            </div>
+        </header>
+        <h1>Hookah shop "Dark Zone"</h1>
+        <div class="nav-panel">
+            <div class="page"><a href="#">Home</a></div>
+            <div class="slesh">/</div>
+            <div class="active-page page"><a href="index.html">Catalog</a></div>
+        </div>
+        <div class="main-container">
+            <div class="filter-block">
+                <h2>Filter</h2>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend><span>Producing country:</span></legend>
+                        <div>
+                            <input type="checkbox" class="custom-checkbox" id="ukr">
+                            <label for="ukr">Ukraine</label>
+                            <br>
+                            <input type="checkbox" class="custom-checkbox" id="ger">
+                            <label for="ger">Germany</label>
+                            <br>
+                            <input type="checkbox" class="custom-checkbox" id="rus">
+                            <label for="rus">Russia</label>
+                            <br>
+                            <input type="checkbox" class="custom-checkbox" id="usa">
+                            <label for="usa">USA</label>
+                        </div>
+                    </fieldset> 
+                    <fieldset>
+                        <legend><span>Brands:</span></legend>
+                        <div>
+                            <input type="checkbox" class="custom-checkbox" id="amy">
+                            <label for="amy">AMY</label>
+                            <br>
+                            <input type="checkbox" class="custom-checkbox" id="hoob">
+                            <label for="hoob">Hoob</label>
+                            <br>
+                            <input type="checkbox" class="custom-checkbox" id="hi-t">
+                            <label for="hi-t">Hi-tech</label>
+                            <br>
+                            <input type="checkbox" class="custom-checkbox" id="kaya">
+                            <label for="kaya">Kaya</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend><span>Color:</span></legend>
+                        <div>
+                            <input type="checkbox" class="custom-checkbox" id="red">
+                            <label for="red">Red</label>
+                            <br>
+                            <input type="checkbox" class="custom-checkbox" id="brown">
+                            <label for="brown">Brown</label>
+                            <br>
+                            <input type="checkbox" class="custom-checkbox" id="metal">
+                            <label for="metal">Metal</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend><span>Price</span></legend>
+                        <div class="range">
+                            <input type="range" min="1" max="600" step="10" value="300">
+                        </div>
+                    </fieldset>
+                    <div class="button-form">
+                        <button type="reset">Clear</button>
+                        <button type="submit">Apply</button>
+                    </div>
+                </form>
+            </div>
+            <div class="product-block">
+                <div class="product">
+                    <h3><a href="./card.html">Hi-tech Travel</a></h3>
+                    <img src="./assets/images/hi-tech-travel.jpg" alt="">
+                    <p class="prod-avail">Available</p>
+                    <p class="prod-price">Price: 440$</p>
+                    <button class="but-buy">BUY</button>
+                </div>
+                <div class="product not-active">
+                    <h3 class="not-active">AMY Deluxe SS 05</h3>
+                    <img src="./assets/images/amy-deluxe-ss-05.jpg" alt="">
+                    <p class="prod-avail red">Not available</p>
+                    <p class="prod-price">Price: 160$</p>
+                    <button disabled class="but-buy not-active">BUY</button>
+                </div>
+                <div class="product not-active">
+                    <h3 class="not-active">HOOB RIG C</h3>
+                    <img src="./assets/images/hoob-rig.jpg" alt="">
+                    <p class="prod-avail red">Not available</p>
+                    <p class="prod-price">Price: 450$</p>
+                    <button disabled class="but-buy not-active">BUY</button>
+                </div>
+                <div class="product not-active">
+                    <h3 class="not-active">Kaya MADERA</h3>
+                    <img src="./assets/images/kaya-madera.jpg" alt="">
+                    <p class="prod-avail red">Not available</p>
+                    <p class="prod-price">Price: 170$</p>
+                    <button disabled class="but-buy not-active">BUY</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p class="h-card">
+                <img class="u-photo" src="./assets/images/logo.PNG" alt=""/><br>
+                <a class="p-name u-url" href="./index.html">Hookah shop "Dark Zone"</a><br>
+                <a class="u-email" href="mailto:smokedarkzone@gmail.com">smokedarkzone@gmail.com</a>,<br>
+                <span class="p-street-address">Pecherskaya street 33</span>,
+                <span class="p-locality">Kyiv</span>,
+                <span class="p-country-name">Ukraine</span>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 2em;
+}
+input[type=text]{
+    padding: 0 10px;
+    width: 100%;
+    color: green;
+}
+input[type=button]{
+    color: green;
+}
+input[type=text]:hover, input[type=button]:hover{
+    color: red;
+}

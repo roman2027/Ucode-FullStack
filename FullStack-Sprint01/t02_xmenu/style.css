@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(http://www.hqwallpapers.ru/wallpapers/brands/apple-na-dveri.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+h1{
+    color: #d1d1d1e8;
+    font-size: 70px;
+    font-family: monospace;
+    position: absolute;
+    top: 75%;
+}
+#menu{
+    position: fixed;
+    top: 0;
+    width: 75%;
+}
+#menu a{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #40404138;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+#menu ul{
+    list-style: none;
+    display: flex;
+}
+#menu li{
+    position: relative;
+    width: 100%;
+}
+
+.dropdown li, .dropdown-2 li{
+    display: none;
+}
+#menu li:hover .dropdown > li{
+    transition: all 1s;
+    display: block;
+}
+.dropdown li:hover .dropdown-2 > li{
+    transition: all 1s;
+    display: block;
+}
+.dropdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.dropdown-2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 100%;
+    width: 200px;
+}
+#navbar li:hover{
+    transition: all 0.5s;
+    background: #9b99929d;
+    color: #fff;
+    border-radius: 10px;
+}
+#navbar ul li:hover{
+    transition: all 0.5s;
+    background: #9b99929d;
+    color: #fff;
+}
