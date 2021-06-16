@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>t04</title>
+  </head>
+  <body>
+    <form>
+      <h1>What Thanos did for the Soul Stone?</h1>
+      <input type="radio" name="btn" value="Jumped" id="Jumped" class="rad" />
+      <label for="Jumped">Jumped from the mountain</label>
+      <br />
+      <input type="radio" name="btn" value="Made" id="Made" class="rad" />
+      <label for="Made">Made stone keeper to jump from the mountain</label>>
+      <br />
+      <input type="radio" name="btn" value="Pushed" id="Pushed" class="rad" />
+      <label for="Pushed">Pushed Gamora off the mountain</label>
+      <br />
+      <br />
+      <input type="submit" value="I made a choice!" class="btn" />
+    </form>
+    <br />
+    <div id="out"></div>
+    <script>
+      const btn = document.querySelector(".btn");
+      const rad = document.querySelectorAll(".rad");
+      const out = document.querySelector("#out");
+
+      function validator(event) {
+        event.preventDefault();
+        for (let i = 0; i < rad.length; i++) {
+          if (rad[i].checked) {
+            if (rad[i].value == "Pushed") {
+              out.textContent = "True";
+            } else {
+              out.textContent = "Shame on you! Go watch Avengers!";
+            }
+          }
+        }
+      }
+
+      btn.addEventListener("click", validator, false);
+    </script>
+  </body>
+</html>
