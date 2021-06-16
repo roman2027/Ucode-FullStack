@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.info {
+    position: fixed;
+    right: 3%;
+    padding: 15px;
+    background-color: red;
+    border-radius: 25px;
+}
+
+img {
+    display: block;
+    margin-left: calc(50%-300px);
+    margin: 30px auto;
+}
