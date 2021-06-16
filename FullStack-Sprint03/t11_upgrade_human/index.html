@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descrition" content="t11. Upgrade human">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade human</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <img  id="img" src="https://media.istockphoto.com/vectors/user-avatar-profile-icon-black-vector-illustration-vector-id1209654046?k=6&m=1209654046&s=612x612&w=0&h=sNiHvwJm5SPrpTCjz-7eqSDqew5-f2hASM2FrGLtMJ4=">
+    </div>
+    
+    <div class="show">
+        <div>First name:<span id="showFirstName"></span></div>
+        <div>Last name:<span id="showLastName"></span></div>
+        <div>Gender:<span id="showGender"></span></div>
+        <div>Age:<span id="showAge"></span></div>
+        <div>Calories:<span id="showCalories"></span></div>
+        <div id="speech"><span id="voice"></span></div>
+    </div>
+
+    <div class="buttons">
+        <button class="create" onclick="createHuman()">Create a human</button>
+        <button id="sleeping">Sleep for</button>
+        <button id="eating">Feed</button>
+        <button id="turn" onclick="turnIn()">POWER</button>
+        <button id="fly" style="display: none;">Fly</button>
+        <button id="evil" style="display: none;">Fight With Evil</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
